@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .wishlist-item {
+            border: 2px solid #18122B;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item-details {
+            flex: 1;
+        }
+        .item-details h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .item-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: gray;
+        }
+        .price {
+            font-size: 14px;
+            color: #18122B;
+        }
+        .price .old-price {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .actions {
+            text-align: center;
+        }
+        .actions select,
+        .actions button {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .actions button {
+            background-color:#18122B;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment</h1>
+    <div class="wishlist-item">
+        <div class="item-details">
+            <h4> Saint Laurent Sac de Jour</h4>
+            <p>Shoulder Bag</p>
+            <p class="price"><span class="old-price">Rp.300,000.00</span>Rp.249,000.00</p>
+            <p>Tanggal dimasukkan: 2024-12-30</p>
+        </div>
+        <div class="actions">
+            <select>
+                <option>International</option>
+            </select>
+            <select>
+                <option>One size</option>
+            </select>
+            <button>PESAN</button>
+        </div>
+    </div>
+    <div class="wishlist-item">
+        <div class="item-details">
+            <h4> Le 5 À 7 Mini Patent-leather Shoulder Bag</h4>
+            <p>Shoulder Bag</p>
+            <p class="price"><span class="old-price">Rp.255,000.00</span>Rp.249,000.00</p>
+            <p>Tanggal dimasukkan: 2025-01-03</p>
+        </div>
+        <div class="actions">
+            <select>
+                <option>International</option>
+            </select>
+            <select>
+                <option>One Size</option>
+            </select>
+            <button>PESAN</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #fafafa;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .sidebar ul li a.active {
+            color: #18122B;
+            font-weight: bold;
+        }
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+        .content h2 {
+            margin: 0 0 20px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-picture img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-picture input[type="file"] {
+            display: block;
+            margin: 10px auto;
+        }
+        .form-actions {
+            text-align: right;
+        }
+        .form-actions button {
+            background-color: #18122B;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-actions button:hover {
+            background-color: #18122B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" class="active">Profil</a></li>
+                <hr>
+                <hr>
+                <li><a href="#">Alamat</a></li>
+                <hr>
+                <hr>
+                <li><a href="#">Ubah Password</a></li>
+                <hr>
+                <hr>
+                <li><a href="#">Pengaturan Notifikasi</a></li>
+                <hr>
+                <hr>
+                <li><a href="#">Pengaturan Privasi</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Profil Saya</h2>
+            <form>
+                 <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Name Account</label>
+                    <input type="email" class="form-control" id="Name Account" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone</label>
+                    <input type="Phone" class="form-control" id="Phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="Gender">Gender</label>
+                    <input type="Gender" class="form-control" id="Gender" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <label for="Birth">Birth</label>
+                    <input type="Birth" class="form-control" id="Birth" placeholder="Enter your Birth">
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
